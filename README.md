@@ -14,11 +14,11 @@ This is a simple weather application built with React that provides users with r
 
 1. Clone the repository:
 
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/your-username/weather-app.git](https://github.com/Majjigiprajwal/Weather-Info.git
 
 2. Navigate to the project folder
 
-   cd {folder Name}
+   cd Weather-Info
    
 3. install dependencies
     npm install
@@ -33,5 +33,17 @@ This is a simple weather application built with React that provides users with r
 
 Tailwind css
                 tailwind css is used for styling the components
+
+React-loader-spinner
+                 react-loader-spinner is used for showing the data loading...
+
+Axios  
+        axios library is used for fetching the data from the api
+
+Tomorrow.io
+        tomorrow.io api is used to fetch the data for realtime and forecast weather data.
+
+Moment 
+         moment is used to get the day of a particular date to show the user the day for forecasting the weather data.
 
 
