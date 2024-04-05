@@ -8,7 +8,7 @@ export const WeatherDataProvider = ({ children }) => {
 
   const [forecastedWeatherData,setForecastedWeatherData] = useState(null)
  
-   console.log(forecastedWeatherData)
+
   
   const updateRealtimeWeatherData = (data) => {
     setRealtimeWeatherData(data);

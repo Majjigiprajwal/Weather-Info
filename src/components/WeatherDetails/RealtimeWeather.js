@@ -2,6 +2,7 @@ import React from 'react'
 import WeatherCard from '../WeatherCard/WeatherCard'
 import { useWeatherData } from '../../context/WeatherDataContext'
 import { useNavigate } from 'react-router-dom';
+import {MagnifyingGlass} from 'react-loader-spinner'
 
 const RealtimeWeather = () => {
        
@@ -20,7 +21,16 @@ const RealtimeWeather = () => {
             Object.entries(realtimeWeatherData).map(([key,value])=>{
                 return <WeatherCard key={key} parameter={key} value={value} />
              })
-             : <div> loading  </div>
+             : <div> <MagnifyingGlass
+             visible={true}
+             height="80"
+             width="80"
+             ariaLabel="magnifying-glass-loading"
+             wrapperStyle={{}}
+             wrapperClass="magnifying-glass-wrapper"
+             glassColor="#c0efff"
+             color="#e15b64"
+             /> </div>
          }
        </div>
     </div>

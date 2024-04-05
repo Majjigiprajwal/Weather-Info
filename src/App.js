@@ -1,12 +1,9 @@
 import './App.css';
-import axios from 'axios'
-import Header from './components/Header/Header';
-import WeatherCard from './components/WeatherCard/WeatherCard';
-import SearchBar from './components/SearchBar/SearchBar';
 import Home from './pages/Home';
 import { useWeatherData } from './context/WeatherDataContext';
 import {Routes,Route} from 'react-router-dom'
-import ForecastedWeather from './components/WeatherDetails/ForecastedWeather';
+
+import WeatherForecast from './pages/WeatherForecast';
 
 function App() {
   const context = useWeatherData()
@@ -14,7 +11,7 @@ function App() {
   return (
       <Routes>
       <Route path="/" element={<Home />} />
-      <Route path='/forecasted-weather' element={<ForecastedWeather />} />
+      <Route path='/forecasted-weather' element={<WeatherForecast />} />
       </Routes>
   );
 }

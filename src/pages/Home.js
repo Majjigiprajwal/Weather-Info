@@ -9,6 +9,7 @@ import { useWeatherData } from '../context/WeatherDataContext'
 const Home = () => {
 
         const {updateRealtimeWeatherData} = useWeatherData()
+        
        useEffect(()=>{
              const fetchRealtimeWeatherData = async ()=>{
                   try{
